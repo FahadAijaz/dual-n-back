@@ -1,1 +1,23 @@
-<p>home works!</p>
+<h1>Dual-N-back</h1>
+<div id="home_controls">
+  <button class="btn">START</button>
+  <!--          (click)="play()"-->
+
+</div>
+<div class="widget">
+  <h2>Last games</h2>
+  <table>
+    <tr>
+      <th>n</th>
+      <th>score</th>
+    </tr>
+    <!--    <tr *ngFor="let record of gameService.games_records">-->
+    <!--      <td>{{ record.n }}</td>-->
+    <!--      <td>{{ record.score }}%</td>-->
+    <!--    </tr>-->
+  </table>
+</div>
+<div class="widget">
+  <h2>Daily stats</h2>
+  <app-charts></app-charts>
+</div>
