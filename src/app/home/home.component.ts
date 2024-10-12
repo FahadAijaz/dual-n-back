@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ChartsComponent} from "../charts/charts.component";
+import {Router} from "@angular/router";
 
 
 @Component({
@@ -13,9 +14,12 @@ import {ChartsComponent} from "../charts/charts.component";
 })
 export class HomeComponent implements OnInit {
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   ngOnInit() {
+  }
+  play() {
+    this.router.navigate(['play']);
   }
 }
